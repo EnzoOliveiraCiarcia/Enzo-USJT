@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class VelocidadeMedia {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double distancia, tempo, velocidade;
+
+        System.out.print("Digite a distância (km): ");
+        distancia = sc.nextDouble();
+
+        System.out.print("Digite o tempo (horas): ");
+        tempo = sc.nextDouble();
+
+        velocidade = distancia / tempo;
+
+        System.out.println("Velocidade média: " + velocidade + " km/h");
+
+        sc.close();
+    }
+}
