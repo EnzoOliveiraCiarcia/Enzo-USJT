@@ -1,0 +1,33 @@
+# 🚀 Exercício 1 – Velocidade Média
+
+## 📸 Fluxograma
+
+ou visualize abaixo 👇
+
+![Fluxograma](https://(drive.google.com/(drive/u/0/folders/1ox0CZiB_xXw55p9CRMtQMPab3lEl6Cja)
+
+---
+
+## 💻 Código Java
+
+import java.util.Scanner;
+
+public class Ex1_VelocidadeMedia {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double distancia, tempo, velocidade;
+
+        System.out.print("Digite a distância (km): ");
+        distancia = sc.nextDouble();
+
+        System.out.print("Digite o tempo (h): ");
+        tempo = sc.nextDouble();
+
+        velocidade = distancia / tempo;
+
+        System.out.println("Velocidade média: " + velocidade + " km/h");
+
+        sc.close();
+    }
+}
