@@ -12,7 +12,7 @@ ou visualize abaixo 👇
 
 import java.util.Scanner;
 
-public class Ex1_VelocidadeMedia {
+public class VelocidadeMedia.java {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
