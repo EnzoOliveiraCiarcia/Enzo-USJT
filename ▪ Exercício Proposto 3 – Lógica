@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Logica3 {
+public class Logica3.java {
     public static void main(String[] args) {
         
         Scanner scanner = new Scanner(System.in);
