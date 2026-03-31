@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Exercicio5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite um número: ");
+        int numero = sc.nextInt();
+
+        if (numero % 3 == 0 && numero % 5 == 0) {
+            System.out.println("O número é múltiplo de 3 e de 5 ao mesmo tempo.");
+        } else {
+            System.out.println("O número NÃO é múltiplo de 3 e de 5 ao mesmo tempo.");
+        }
+
+        sc.close();
+    }
+}
