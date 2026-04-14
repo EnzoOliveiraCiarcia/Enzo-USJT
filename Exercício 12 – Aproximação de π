@@ -1,0 +1,26 @@
+Fluxograma (https://drive.google.com/file/d/16I8HrKAORNe481RE95ujfULi1reGVvx1/view?usp=drive_link)
+
+import java.util.Scanner;
+
+public class Ex12 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int termos = sc.nextInt();
+
+        double pi = 0;
+        int i = 0;
+        int sinal = 1;
+
+        while (i < termos) {
+            pi += sinal * (1.0 / (2 * i + 1));
+            sinal *= -1;
+            i++;
+        }
+
+        pi *= 4;
+
+        System.out.println("PI aproximado: " + pi);
+        System.out.println("PI real: " + Math.PI);
+    }
+}
