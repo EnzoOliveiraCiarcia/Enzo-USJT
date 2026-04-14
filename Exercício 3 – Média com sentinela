@@ -1,0 +1,26 @@
+Fluxograma (https://drive.google.com/file/d/1pNUiITWHbEudLEc3EMoeEkWt1NHKzOX0/view?usp=drive_link)
+
+import java.util.Scanner;
+
+public class Ex3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double soma = 0;
+        int contador = 0;
+
+        double temp = sc.nextDouble();
+
+        while (temp != 999) {
+            soma += temp;
+            contador++;
+            temp = sc.nextDouble();
+        }
+
+        if (contador > 0) {
+            System.out.println("Média: " + (soma / contador));
+        } else {
+            System.out.println("Nenhum valor válido.");
+        }
+    }
+}
