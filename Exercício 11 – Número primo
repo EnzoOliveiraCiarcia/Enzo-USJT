@@ -1,0 +1,33 @@
+Fluxograma (https://drive.google.com/file/d/1FZzFlC74a7G5-j8AOjENZr11thEV7j52/view?usp=drive_link)
+
+import java.util.Scanner;
+
+public class Ex11 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int num = sc.nextInt();
+
+        if (num <= 1) {
+            System.out.println("Não é primo");
+            return;
+        }
+
+        int i = 2;
+        boolean primo = true;
+
+        while (i * i <= num) {
+            if (num % i == 0) {
+                primo = false;
+                break;
+            }
+            i++;
+        }
+
+        if (primo) {
+            System.out.println("É primo");
+        } else {
+            System.out.println("Não é primo");
+        }
+    }
+}
