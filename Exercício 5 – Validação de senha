@@ -1,0 +1,25 @@
+Fluxograma (https://drive.google.com/file/d/11kzgTgVQMww23dqbX0NKc6nfTrPIwr3j/view?usp=drive_link)
+
+import java.util.Scanner;
+
+public class Ex5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int senhaCorreta = 2026;
+        int tentativas = 0;
+
+        while (tentativas < 3) {
+            int senha = sc.nextInt();
+
+            if (senha == senhaCorreta) {
+                System.out.println("Acesso Permitido!");
+                return;
+            }
+
+            tentativas++;
+        }
+
+        System.out.println("Terminal Bloqueado!");
+    }
+}
