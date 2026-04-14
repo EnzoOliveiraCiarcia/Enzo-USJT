@@ -1,0 +1,21 @@
+Fluxograma (https://drive.google.com/file/d/1jIZ_dcVOU6A-7rhHofweUvres2sB11Il/view?usp=drive_link)
+
+import java.util.Scanner;
+
+public class Ex8 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double inicio = sc.nextDouble();
+        double fim = sc.nextDouble();
+        double passo = sc.nextDouble();
+
+        double atual = inicio;
+
+        while (atual <= fim) {
+            double celsius = atual - 273.15;
+            System.out.println(atual + "K = " + celsius + "°C");
+            atual += passo;
+        }
+    }
+}
