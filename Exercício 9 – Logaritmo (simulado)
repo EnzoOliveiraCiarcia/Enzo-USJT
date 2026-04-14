@@ -1,0 +1,21 @@
+Fluxograma (https://drive.google.com/file/d/1DPQ0yFFoju0TlONT35vDj_s7E431dwqQ/view?usp=drive_link)
+
+import java.util.Scanner;
+
+public class Ex9 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double n = sc.nextDouble();
+        double base = sc.nextDouble();
+
+        int contador = 0;
+
+        while (n > 1) {
+            n /= base;
+            contador++;
+        }
+
+        System.out.println("Resultado: " + contador);
+    }
+}
