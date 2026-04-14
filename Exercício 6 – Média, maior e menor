@@ -1,0 +1,30 @@
+Fluxograma (https://drive.google.com/file/d/1Tv0vUyyrbZ5AJQhfb_LbQBqhtNHTJOaQ/view?usp=drive_link)
+
+import java.util.Scanner;
+
+public class Ex6 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double soma = 0;
+        double maior = Double.MIN_VALUE;
+        double menor = Double.MAX_VALUE;
+
+        int i = 0;
+
+        while (i < 10) {
+            double valor = sc.nextDouble();
+
+            soma += valor;
+
+            if (valor > maior) maior = valor;
+            if (valor < menor) menor = valor;
+
+            i++;
+        }
+
+        System.out.println("Média: " + soma / 10);
+        System.out.println("Maior: " + maior);
+        System.out.println("Menor: " + menor);
+    }
+}
