@@ -1,0 +1,22 @@
+Fluxograma (https://drive.google.com/file/d/1C1uau3ElfGANMb3NDz7VVhDATLC8MqN-/view?usp=drive_link)
+
+import java.util.Scanner;
+
+public class Ex7 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        int a = 0, b = 1;
+        int i = 0;
+
+        while (i < n) {
+            System.out.print(a + " ");
+            int temp = a + b;
+            a = b;
+            b = temp;
+            i++;
+        }
+    }
+}
