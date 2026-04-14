@@ -1,0 +1,20 @@
+Fluxograma (https://drive.google.com/file/d/1RV-d12dvpszpkafzh99j3hCitSzOEQZs/view?usp=drive_link)
+
+import java.util.Scanner;
+
+public class Ex1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite um número: ");
+        int num = sc.nextInt();
+
+        for (int i = 1; i <= 10; i++) {
+            int resultado = num * i;
+
+            if (resultado % 3 == 0) {
+                System.out.println(num + " x " + i + " = " + resultado);
+            }
+        }
+    }
+}
