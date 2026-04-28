@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+// Exercício 4 – Soma dos pares
+public class Ex4 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int n;
+        char resp;
+
+        do {
+            System.out.print("Digite N: ");
+            n = sc.nextInt();
+            int soma = 0;
+
+            for (int i = 2; i <= n; i += 2) {
+                soma += i;
+            }
+
+            System.out.println("Soma: " + soma);
+
+            System.out.print("Repetir? (s/n): ");
+            resp = sc.next().charAt(0);
+
+        } while (resp == 's');
+
+        sc.close();
+    }
+}
