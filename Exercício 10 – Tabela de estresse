@@ -1,0 +1,14 @@
+// Exercício 10 – Tabela de estresse
+public class Ex10 {
+    public static void main(String[] args) {
+
+        for (int x = 1; x <= 5; x++) {
+            for (int y = 1; y <= 5; y++) {
+                int s = (x * x) + (y * y);
+                System.out.print(s + "\t");
+            }
+            System.out.println();
+        }
+
+    }
+}
