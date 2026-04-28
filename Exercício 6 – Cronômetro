@@ -1,0 +1,12 @@
+// Exercício 6 – Cronômetro
+public class Ex6 {
+    public static void main(String[] args) {
+
+        for (int min = 0; min <= 2; min++) {
+            for (int seg = 0; seg < 60; seg++) {
+                System.out.println(min + ":" + seg);
+            }
+        }
+
+    }
+}
